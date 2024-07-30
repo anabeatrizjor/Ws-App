@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App #123 - practice</string>
+    <string name="principal">Principal</string>
+    <string name="configura_es">Configurações</string>
+    <string name="worldskills">WorldSkills</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+</resources>

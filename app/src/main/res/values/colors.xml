@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="backgroundColor">#FFFFFFFF</color>
+    <color name="grey">#7B7474</color>
+    <color name="yellowDefault">#E9D314</color>
+    <color name="error">#846C25</color>
+</resources>

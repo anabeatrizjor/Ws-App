@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainW"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorldskillsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/yellowDefault">
+
+                <ImageView
+                    android:id="@+id/menuWs"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/menu_icon"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WorldSkills"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/spinnerWs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewSpinner"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/spinnerWs"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_italic"
+                android:text="oi"
+                android:layout_below="@id/imageViewSpinner"
+                android:layout_marginStart="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navViewWs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_all"
+        app:headerLayout="@layout/nav_header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
